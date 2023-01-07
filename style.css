@@ -1,0 +1,81 @@
+:root {
+  --text: #4b5d68;
+  --heading: #212353;
+  --purple: #9c69e2;
+  --pink: #f063b8;
+  --teal: #68c9ba;
+  --bg-grey: #f6fafd;
+  --white: #ffffff;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  background: linear-gradient(180deg, var(--bg-grey) 0%, var(--white) 19.4%);
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+/* Button Styles */
+
+.button {
+  border-radius: 50px;
+}
+a.button {
+  text-decoration: none;
+}
+
+.button-white {
+  color: var(--heading);
+  font-size: 16px;
+  letter-spacing: 0.005em;
+  padding: 16px 69px 16px 29px;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  background-image: url(images/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: right 29px center;
+  background-size: 20px auto;
+}
+
+/*
+--------------------------- HEADER ---------------------------
+*/
+
+#header .container,
+.header-nav,
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  justify-content: space-between;
+}
+
+.navigation {
+  gap: 40px;
+}
+
+#header .container {
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.logo {
+  margin-right: 120px;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: var(--text);
+}
+.navigation li a.active {
+  color: var(--heading);
+  font-weight: 700;
+}
