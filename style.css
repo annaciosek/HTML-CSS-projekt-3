@@ -225,8 +225,10 @@ a.button {
 
 .feature-item {
   display: flex;
+  align-items: center;
   gap: 30px;
   padding: 49px 50px 33px 0;
+  position: relative;
 }
 
 .feature-1,
@@ -257,6 +259,53 @@ a.button {
   display: flex;
   flex-direction: column;
 }
+
 .feature-item .button-tertiary {
   margin-top: auto;
+}
+
+/* Background Line Shapes */
+
+.feature-info {
+  z-index: 2;
+}
+
+.feature-1 .bg1 {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+}
+
+.feature-1 .bg1-2 {
+  position: absolute;
+  top: 60px;
+  right: 110px;
+}
+
+.feature-2 .bg1 {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
+.feature-3 .bg1 {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+}
+
+.feature-4 .bg1 {
+  position: absolute;
+  top: 15px;
+  right: 15%;
+}
+
+.feature-4 .bg1-2 {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  transform: rotate(50deg);
+}
+.feature-4-image {
+  z-index: 2;
 }
