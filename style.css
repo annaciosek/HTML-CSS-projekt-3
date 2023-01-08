@@ -368,3 +368,37 @@ a.button {
   color: var(--purple);
   margin-bottom: 20px;
 }
+
+/* Testimonials - Slider Controls */
+
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dots {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.dot-active {
+  background-color: var(--pink);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot {
+  background-color: var(--white);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.arrows {
+  display: flex;
+  gap: 20px;
+  padding-right: 75px;
+}
