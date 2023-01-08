@@ -78,6 +78,10 @@ a.button {
   padding: 16px 37px;
 }
 
+.mb-40 {
+  margin-bottom: 40px;
+}
+
 /*
 --------------------------- HEADER ---------------------------
 */
@@ -114,6 +118,9 @@ a.button {
   color: var(--heading);
   font-weight: 700;
 }
+section {
+  padding: 75px 0;
+}
 
 /*
 --------------------------- HERO ---------------------------
@@ -146,4 +153,17 @@ a.button {
 
 .hero-image {
   margin: 0 0 -20% -40%;
+}
+
+/*
+--------------------------- ABOUT ---------------------------
+*/
+
+.about-wrapper {
+  background-color: rgba(240, 99, 184, 0.15);
+  border-radius: 50px;
+  display: flex;
+  gap: 62px;
+  padding: 32px 93px 24px 11px;
+  align-items: center;
 }
