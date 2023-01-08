@@ -2,7 +2,7 @@
   --text: #4b5d68;
   --heading: #212353;
   --purple: #9c69e2;
-  --pink: #f063b8;
+  --pink: rgb(240, 99, 184);
   --teal: #68c9ba;
   --bg-grey: #f6fafd;
   --white: #ffffff;
@@ -22,10 +22,39 @@ body {
   margin: 0 auto;
 }
 
+/* Typography */
+
+h1,
+h2,
+h3 {
+  font-family: Helvetica, sans-serif;
+  color: var(--heading);
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
 /* Button Styles */
 
 .button {
   border-radius: 50px;
+  display: inline-block;
 }
 a.button {
   text-decoration: none;
@@ -41,6 +70,12 @@ a.button {
   background-repeat: no-repeat;
   background-position: right 29px center;
   background-size: 20px auto;
+}
+
+.button-purple {
+  background-color: var(--purple);
+  color: var(--white);
+  padding: 16px 37px;
 }
 
 /*
@@ -78,4 +113,37 @@ a.button {
 .navigation li a.active {
   color: var(--heading);
   font-weight: 700;
+}
+
+/*
+--------------------------- HERO ---------------------------
+*/
+
+#hero {
+  padding: 100px 0;
+}
+
+#hero .container {
+  display: flex;
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.hero-image-wrapper {
+  width: 50%;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-description {
+  margin-bottom: 50px;
+  width: 50%;
+}
+
+.hero-image {
+  margin: 0 0 -20% -40%;
 }
