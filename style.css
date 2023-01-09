@@ -10,9 +10,9 @@
 
 body {
   color: var(--text);
-  font-family: Lato, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.6;
   background: linear-gradient(180deg, var(--bg-grey) 0%, var(--white) 19.4%);
   background-repeat: no-repeat;
@@ -60,6 +60,7 @@ h3 {
 
 .button {
   border-radius: 50px;
+  font-weight: 900;
   display: inline-block;
 }
 
@@ -94,7 +95,6 @@ a.button {
 
 .button-tertiary {
   font-size: 16px;
-  font-weight: 700;
   color: var(--heading);
 }
 
@@ -164,7 +164,7 @@ a.button {
 }
 .navigation li a.active {
   color: var(--heading);
-  font-weight: 700;
+  font-weight: 900;
 }
 
 /*
@@ -232,6 +232,7 @@ a.button {
 
 .features-grid p {
   font-size: 16px;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
@@ -374,6 +375,10 @@ a.button {
   margin-bottom: 20px;
 }
 
+.slide-content p:last-child {
+  font-weight: 400;
+}
+
 /* Testimonials - Slider Controls */
 
 .carousel-controls {
@@ -423,7 +428,8 @@ a.button {
 
 #footer {
   border-top: 2px solid rgba(156, 105, 226, 0.2);
-  padding: 100px 0;
+  padding: 100px 0 90px 0;
+  color: var(--heading);
 }
 
 /* Footer Top */
@@ -432,10 +438,12 @@ a.button {
   display: flex;
   justify-content: space-between;
   padding-bottom: 75px;
+  color: var(--heading);
 }
 
-.footer-top-cta h2 {
-  margin-bottom: 20px;
+.footer-top-cta p {
+  margin-top: 20px;
+  color: var(--text);
 }
 
 .footer-top-buttons a:first-child {
@@ -445,9 +453,10 @@ a.button {
 /* Footer Middle */
 
 .footer-middle {
-  padding-top: 75px;
+  font-size: 16px;
+  padding: 75px 0 50px 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 2fr repeat(3, 1fr);
 }
 
 .logo {
@@ -460,12 +469,9 @@ a.button {
 .logo p {
   font-size: 20px;
   font-weight: 700;
-  color: var(--heading);
 }
 
 address {
-  color: var(--heading);
-  font-size: 16px;
   font-weight: 500;
   line-height: 1.8;
 }
@@ -479,4 +485,31 @@ address {
 .email-tel a {
   text-decoration: none;
   color: var(--heading);
+}
+
+.footer-title {
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.footer-nav li a {
+  color: var(--heading);
+  font-weight: 400;
+  line-height: 2.5;
+  text-decoration: none;
+}
+
+.social-links a:not(:last-child) {
+  margin-right: 14px;
+}
+
+/* Footer Bottom */
+
+.footer-bottom {
+  padding-top: 50px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.8;
+  display: flex;
+  justify-content: space-between;
 }
