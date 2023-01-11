@@ -177,7 +177,7 @@ a.button {
 */
 
 #hero {
-  padding: 100px 0;
+  padding: 100px 0 125px 0; /* padding-bottom is included because image has a negative margin */
 }
 
 #hero .container {
